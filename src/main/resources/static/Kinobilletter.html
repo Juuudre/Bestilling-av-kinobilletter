@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Kinobilletter.js"></script>
+</head>
+<body>
+<h1> Bestilling av kinobilletter</h1>
+Velg Film: <select id="film">
+    <option>----------</option>
+    <option>Oppenheimer</option>
+    <option>Interstellar</option>
+    <option>Bladerunner 2049</option>
+    <option>The Martian</option>
+</select>
+<span id="feilFilm"></span><br>
+<br>
+Antall <input type="number" id="antall">
+<span id="feilAntall"></span><br>
+<br>
+
+Fornavn <input type="text" id="fornavn">
+<span id="feilFornavn"></span><br>
+
+
+Etternavn <input type="text" id="etternavn">
+<span id="feilEtternavn"></span><br>
+
+
+Telefonnr <input type="text" id="telefonnr">
+<span id="feilTelefonnr"></span><br>
+
+
+Epost <input type="text" id="epost">
+<span id="feilEpost"></span><br>
+
+
+<button onclick="kjop()">Kjøp billett</button><br>
+
+<h2>Alle billetter</h2>
+
+<div id="kjopteFilmer"></div>
+<button onclick="slett()">Slett alle billettene</button>
+
+</body>
+</html>
