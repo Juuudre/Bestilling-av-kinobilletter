@@ -4,7 +4,7 @@ OsloMet brukernavn: majud0841
 
 GitHub brukernavn: Juuudre
 
-GitHub repo URL: 
+GitHub repo URL: https://github.com/Juuudre/Bestilling-av-kinobilletter.git
 
 Fullt navn: Mathias Forsmo Judre
 
