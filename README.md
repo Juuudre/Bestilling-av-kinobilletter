@@ -1,5 +1,5 @@
 Oblig 1
-
+=======
 OsloMet brukernavn: majud0841
 
 GitHub brukernavn: Juuudre
