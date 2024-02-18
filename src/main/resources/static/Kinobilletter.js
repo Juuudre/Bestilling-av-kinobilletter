@@ -7,6 +7,7 @@ function kjop(){
     let telefonnr = document.getElementById("telefonnr").value;
     let eposten = document.getElementById("epost").value;
 
+
     const billetten ={
         Film : valgtFilm,
         Antall : antallBilletter,
@@ -23,6 +24,7 @@ function kjop(){
     document.getElementById("etternavn").value = "";
     document.getElementById("telefonnr").value = "";
     document.getElementById("epost").value = "";
+
 
     if (billetten.Film === "----------" || billetten.Film === ""){
         document.getElementById("feilFilm").innerHTML = "Du må velge en film"
@@ -70,10 +72,14 @@ function kjop(){
 }
 
 function skrivUt(){
-    let ut = "";
-    for (let i = 0;i < kjopteFilmer.length;i++){
-        ut+=kjopteFilmer[i].Film+" "+kjopteFilmer[i].Antall+" "+kjopteFilmer[i].Fornavn+" "+kjopteFilmer[i].Etternavn+" "
-            +kjopteFilmer[i].Telefonnr+" "+kjopteFilmer[i].Epost+"</br>";
+    let ut = "<table><tr>" + "<th>Film</th><th>Antall</th><th>Fornavn</th><th>Etternavn</th><th>Telefonnr</th><th>Epost</th>"+"</tr>";
+
+
+    for (let i in kjopteFilmer){
+        ut+="<tr>";
+        ut+="<td>"+kjopteFilmer[i].Film+"</td><td>"+kjopteFilmer[i].Antall+"</td><td>"+kjopteFilmer[i].Fornavn+"</td><td>"+kjopteFilmer[i].Etternavn+"</td>";
+        ut+="<td>"+kjopteFilmer[i].Telefonnr+"</td><td>"+kjopteFilmer[i].Epost+"</td>";
+        ut+="</tr>";
     }
     document.getElementById("kjopteFilmer").innerHTML = ut;
 }

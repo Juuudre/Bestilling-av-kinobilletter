@@ -1,47 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="Kinobilletter.js"></script>
 </head>
 <body>
+
 <h1> Bestilling av kinobilletter</h1>
-Velg Film: <select id="film">
+<table>
+    <table><td>Velg Film:</td>
+        <td><select id="film">
     <option>----------</option>
     <option>Oppenheimer</option>
     <option>Interstellar</option>
     <option>Bladerunner 2049</option>
     <option>The Martian</option>
-</select>
-<span id="feilFilm"></span><br>
-<br>
-Antall <input type="number" id="antall">
-<span id="feilAntall"></span><br>
-<br>
+        </select></td>
+<td><span id="feilFilm"></span></td>
+    </table>
+    </br>
 
-Fornavn <input type="text" id="fornavn">
-<span id="feilFornavn"></span><br>
+<table>
+<tr><td>Antall</td>
+    <td><input type="number" id="antall"></td>
+    <td><span id="feilAntall"></span></td></tr>
+</table>
+    </br>
 
-
-Etternavn <input type="text" id="etternavn">
-<span id="feilEtternavn"></span><br>
-
-
-Telefonnr <input type="text" id="telefonnr">
-<span id="feilTelefonnr"></span><br>
-
-
-Epost <input type="text" id="epost">
-<span id="feilEpost"></span><br>
+    <table>
+<tr><td>Fornavn</td>
+    <td><input type="text" id="fornavn"></td>
+    <td><span id="feilFornavn"></span></td></tr>
 
 
-<button onclick="kjop()">Kjøp billett</button><br>
+<tr><td>Etternavn</td>
+    <td><input type="text" id="etternavn"></td>
+    <td><span id="feilEtternavn"></span></td></tr>
 
-<h2>Alle billetter</h2>
 
-<div id="kjopteFilmer"></div>
-<button onclick="slett()">Slett alle billettene</button>
+<tr><td>Telefonnr</td>
+    <td><input type="text" id="telefonnr"></td>
+    <td><span id="feilTelefonnr"></span></td></tr>
+
+
+<tr><td>Epost</td>
+    <td><input type="text" id="epost"></td>
+    <td><span id="feilEpost"></span></td></tr>
+    </table>
+
+
+<tr><td><button onclick="kjop()">Kjøp billett</button></td></tr>
+
+<tr><td><h2>Alle billetter</h2></td></tr>
+
+<tr><td><div id="kjopteFilmer"></div></td></tr>
+<tr><td><button onclick="slett()">Slett alle billettene</button></td></tr>
+</table>
 
 </body>
 </html>
